@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/2.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
 """
+import datetime
 
 import os
 from dotenv import load_dotenv, find_dotenv
@@ -142,7 +143,9 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
+JWT_AUTH = {
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(days=5),
+}
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/

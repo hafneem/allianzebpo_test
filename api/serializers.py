@@ -1,10 +1,5 @@
-import random
-
-from decimal import Decimal
-from datetime import datetime
-
 from rest_framework import serializers
-from django.utils import timezone
+
 from api.models import Branches
 
 
