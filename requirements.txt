@@ -5,3 +5,4 @@ djangorestframework==3.12.2
 djangorestframework-jwt==1.11.0
 django-rest-auth==0.9.5
 django-heroku
+whitenoise
