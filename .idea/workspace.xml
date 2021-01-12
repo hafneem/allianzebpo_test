@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0aff2e96-2da6-4280-95e9-b99f4fc06c15" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/views.py" afterPath="$PROJECT_DIR$/api/views.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indian_banks.sql" afterPath="" />
     </list>
     <ignored path="allianzebpo_test.iws" />
     <ignored path=".idea/workspace.xml" />
