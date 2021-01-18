@@ -1,5 +1,5 @@
 from rest_framework.generics import ListAPIView, RetrieveAPIView, get_object_or_404
-from rest_framework.permissions import AllowAny
+from rest_framework.permissions import AllowAny, IsAuthenticated
 
 from api.models import Branches, Banks
 from api.serializers import BankDetailSerializer, FilteredBranchesSerializer
@@ -7,7 +7,7 @@ from api.serializers import BankDetailSerializer, FilteredBranchesSerializer
 
 class RetrieveBranchDetailApiView(RetrieveAPIView):
 
-    permission_classes = [AllowAny]
+    permission_classes = [IsAuthenticated]
     serializer_class = BankDetailSerializer
 
     def get_object(self):
@@ -16,7 +16,7 @@ class RetrieveBranchDetailApiView(RetrieveAPIView):
 
 class FilteredBranchesApiView(ListAPIView):
 
-    permission_classes = [AllowAny]
+    permission_classes = [IsAuthenticated]
     serializer_class = FilteredBranchesSerializer
 
     def get_queryset(self):
